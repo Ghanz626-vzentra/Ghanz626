@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://ghanz626.github.io/sitemap.xml
+
+Sitemap: https://ghanz626-vzentra.github.io/Ghanz626/sitemap.xml
