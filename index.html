@@ -1,263 +1,335 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ghanz626 | Radhitya Ghani Prayata - Young Developer Indonesia</title>
- 
-<meta name="description" content="Ghanz626 adalah seorang developer muda yang telah membangun banyaksekali webstie,aplikasi,bot whatsaap,bo telegram dll, .">
-<meta name="keywords" content="Ghanz626,Radhitya Ghani Prayata,Vzentra,Developer Indonesia,Flutter Developer,Node.js,Telegram Bot,Website Developer,ghanz162">
-<meta name="robots" content="index, follow">
- 
-<!-- PENTING: canonical & og:url sekarang mengarah ke URL ASLI situs ini -->
-<link rel="canonical" href="https://ghanz626-vzentra.github.io/Ghanz626/">
- 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Ghanz626 | Radhitya Ghani Prayata - Young Developer Indonesia">
-<meta property="og:description" content="Portofolio Radhitya Ghani Prayata, developer muda Indonesia dengan berbagai project teknologi.">
-<meta property="og:url" content="https://ghanz626-vzentra.github.io/Ghanz626/">
-<meta property="og:image" content="https://ghanz626-vzentra.github.io/Ghanz626/favicon.ico">
- 
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Ghanz626 | Radhitya Ghani Prayata - Young Developer Indonesia">
-<meta name="twitter:description" content="Portofolio Radhitya Ghani Prayata, developer muda Indonesia dengan berbagai project teknologi.">
- 
-<!-- Tambahan: schema.org Person markup, membantu Google memahami ini halaman TENTANG SESEORANG -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Radhitya Ghani Prayata",
-  "alternateName": ["Ghanz626", "ghanz162"],
-  "url": "https://ghanz626-vzentra.github.io/Ghanz626/",
-  "image": "https://files.catbox.moe/wynenv.jpg",
-  "jobTitle": "Developer Muda Indonesia",
-  "sameAs": [
-    "https://github.com/Ghanz626-vzentra",
-    "https://t.me/Ghanz626",
-    "https://tiktok.com/@ghanz162"
-  ]
-}
-</script>
- 
- 
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
-    <link rel="manifest" href="manifest.json">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080d1b">
+
+  <title>Ghanz626 — Developer Portfolio</title>
+  <meta name="description" content="Portfolio Radhitya Ghani Prayata — Web & App Developer. Explore my projects, skills, and development journey.">
+  <meta name="author" content="Radhitya Ghani Prayata">
+
+  <meta property="og:title" content="Ghanz626 — Developer Portfolio">
+  <meta property="og:description" content="Explore my projects, skills, and development journey.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ghanz626-vzentra.github.io/Ghanz626/">
+  <meta property="og:image" content="https://files.catbox.moe/wynenv.jpg">
+
+  <link rel="canonical" href="https://ghanz626-vzentra.github.io/Ghanz626/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
+
 <body>
-    <div id="loader">
-        <div class="loader-cursor"></div>
-        <p>booting...</p>
-    </div>
- 
-    <nav class="navbar surface" id="navbar">
-        <div class="nav-container">
-            <a href="#home" class="nav-logo">ghanz626<span class="dot">.</span>dev</a>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link active">home</a></li>
-                <li><a href="#about" class="nav-link">about</a></li>
-                <li><a href="#skills" class="nav-link">skills</a></li>
-                <li><a href="#projects" class="nav-link">projects</a></li>
-                <li><a href="#blog" class="nav-link">blog</a></li>
-                <li><a href="#contact" class="nav-link">contact</a></li>
-            </ul>
-            <div class="nav-toggle" id="navToggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
+  <div class="background-glow"></div>
+
+  <header class="header">
+    <nav class="navbar container">
+      <a href="#home" class="logo">GHANZ<span>626.</span></a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Buka menu navigasi" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <a href="#contact" class="nav-cta">Let's Talk <span>↗</span></a>
     </nav>
- 
-    <section id="home" class="section home-section">
-        <div class="container">
-            <div class="terminal surface">
-                <div class="terminal-bar">
-                    <span class="terminal-dot"></span>
-                    <span class="terminal-dot"></span>
-                    <span class="terminal-dot"></span>
-                    <span class="terminal-title">ghanz626@dev: ~</span>
-                </div>
-                <div class="terminal-body">
-                    <div class="terminal-line"><span class="prompt">$</span><span>whoami</span></div>
-                    <div class="profile-row">
-                        <div class="profile-image">
-                            <img src="https://files.catbox.moe/wynenv.jpg" alt="Radhitya Ghani Prayata">
-                        </div>
-                        <div>
-                            <h1>Radhitya Ghani <span>Prayata</span></h1>
-                        </div>
-                    </div>
-                    <div class="typing-line">
-                        <span class="prompt">→</span>
-                        <span id="typingText"></span><span class="typing-cursor">&nbsp;</span>
-                    </div>
-                    <div class="social-buttons">
-                        <a href="https://tiktok.com/@ghanz162" target="_blank" rel="noopener" class="btn-social">tiktok</a>
-                        <a href="https://t.me/Ghanz626" target="_blank" rel="noopener" class="btn-social">telegram</a>
-                        <a href="https://github.com/Ghanz626-VZENTRA" target="_blank" rel="noopener" class="btn-social">github</a>
-                    </div>
-                    <a href="#about" class="btn-primary">explore more →</a>
-                </div>
-            </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <div class="availability">
+            <span class="status-dot"></span>
+            Available for learning & collaboration
+          </div>
+
+          <p class="eyebrow">HELLO, I'M</p>
+          <h1>Radhitya Ghani <span>Prayata.</span></h1>
+
+          <h2>Building digital experiences with <span>code.</span></h2>
+
+          <p class="hero-description">
+            I'm a developer who enjoys turning ideas into useful digital
+            products. I explore web development, application development,
+            and technology.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">Explore Projects <span>↗</span></a>
+            <a href="#about" class="btn btn-outline">More About Me</a>
+          </div>
+
+          <div class="hero-socials">
+            <a href="https://github.com/Ghanz626-vzentra" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            <a href="https://www.tiktok.com/@ghanz162" target="_blank" rel="noopener noreferrer">TikTok ↗</a>
+            <a href="https://t.me/Ghanz626" target="_blank" rel="noopener noreferrer">Telegram ↗</a>
+          </div>
         </div>
+
+        <div class="hero-visual reveal">
+          <div class="profile-orbit orbit-one"></div>
+          <div class="profile-orbit orbit-two"></div>
+
+          <div class="profile-card">
+            <div class="profile-top">
+              <span class="profile-indicator"></span>
+              <span>DEVELOPER PROFILE</span>
+              <span>● ● ●</span>
+            </div>
+
+            <img
+              src="https://files.catbox.moe/wynenv.jpg"
+              alt="Profile photo of Ghanz"
+              class="profile-image"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';"
+            >
+
+            <div class="profile-fallback">G</div>
+
+            <div class="profile-info">
+              <h3>Ghanz626</h3>
+              <p>Web & App Developer</p>
+              <div class="profile-tags">
+                <span>Creative</span>
+                <span>Developer</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="floating-code code-one">const passion = "coding";</div>
+          <div class="floating-code code-two">&lt;Hello World /&gt;</div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-indicator">SCROLL TO EXPLORE <span>↓</span></a>
     </section>
- 
-    <section id="about" class="section about-section">
-        <div class="container">
-            <div class="section-head"> 
-                <h2 class="section-title">Tentang Saya</h2>
-            </div>
-            <div class="about-content surface">
-                <div class="about-text">
-                    <h3>Radhitya Ghani Prayata</h3>
-                    <p><strong>username:</strong> Ghanz626</p>
-                    <p><strong>profesi:</strong> Developer Muda Indonesia</p>
-                    <p><strong>fokus:</strong> Website, aplikasi Android, Flutter, bot Telegram, JavaScript, Node.js.</p>
-                    <p>Saya adalah seorang developer muda yang memiliki bakat dalam dunia teknologi. Saat ini saya fokus mengembanbangkan beberapa project di antara nya bot wa,bot tele,website dan aplikasi vzentra.</p>
-                </div>
-            </div>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">01 — ABOUT ME</p>
+          <h2>Turning curiosity into <span>creation.</span></h2>
+          <p>Getting to know the person behind the code.</p>
         </div>
+
+        <div class="about-grid">
+          <div class="about-card glass-card reveal">
+            <span class="card-number">01 / INTRODUCTION</span>
+            <h3>Hi, I'm Ghanz.</h3>
+            <p>
+              My name is Radhitya Ghani Prayata. I'm interested in technology
+              and software development, especially building websites,
+              applications, and digital tools.
+            </p>
+            <p>
+              I believe every project is an opportunity to learn something
+              new. I enjoy experimenting, solving problems, and improving
+              my skills through real-world projects.
+            </p>
+          </div>
+
+          <div class="about-side">
+            <div class="info-card glass-card reveal">
+              <span class="info-icon">⌘</span>
+              <div>
+                <h3>My Focus</h3>
+                <p>Web Development · App Development · Technology</p>
+              </div>
+            </div>
+
+            <div class="info-card glass-card reveal">
+              <span class="info-icon">✦</span>
+              <div>
+                <h3>My Approach</h3>
+                <p>Learn by building, experiment, and keep improving.</p>
+              </div>
+            </div>
+
+            <div class="info-card glass-card reveal">
+              <span class="info-icon">◎</span>
+              <div>
+                <h3>My Goal</h3>
+                <p>Create useful, accessible, and meaningful digital products.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
- 
-    <section id="skills" class="section skills-section">
-        <div class="container">
-            <div class="section-head">
-             
-                <h2 class="section-title">Skills</h2>
-            </div>
-            <div class="skills-grid">
-                <div class="skill-card surface">
-                    <div class="skill-head"><h4>html</h4><span>90%</span></div>
-                    <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
-                </div>
-                <div class="skill-card surface">
-                    <div class="skill-head"><h4>css</h4><span>85%</span></div>
-                    <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
-                </div>
-                <div class="skill-card surface">
-                    <div class="skill-head"><h4>javascript</h4><span>80%</span></div>
-                    <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
-                </div>
-                <div class="skill-card surface">
-                    <div class="skill-head"><h4>node.js</h4><span>75%</span></div>
-                    <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
-                </div>
-                <div class="skill-card surface">
-                    <div class="skill-head"><h4>flutter</h4><span>30%</span></div>
-                    <div class="progress-bar"><div class="progress" style="width: 30%;"></div></div>
-                </div>
-                <div class="skill-card surface">
-                    <div class="skill-head"><h4>PYTHON</h4><span>15%</span></div>
-                    <div class="progress-bar"><div class="progress" style="width: 15%;"></div></div>
-                </div>
-            </div>
+
+    <!-- EDUCATION -->
+    <section class="section section-alt" id="education">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">02 — EDUCATION</p>
+          <h2>My learning <span>journey.</span></h2>
+          <p>Every step builds a stronger foundation.</p>
         </div>
+
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card glass-card">
+              <span class="timeline-label">ELEMENTARY SCHOOL</span>
+              <h3>CIBEBER NEGERI 1</h3>
+              <p>My early educational foundation.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card glass-card">
+              <span class="timeline-label">JUNIOR HIGH SCHOOL</span>
+              <h3>SMP NEGERI 2</h3>
+              <p>Developing knowledge, interests, and creativity.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card glass-card">
+              <span class="timeline-label">VOCATIONAL EDUCATION</span>
+              <h3>PUSDIKHUBAD CIMAHI</h3>
+              <p>Continuing my learning journey and exploring technology.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
- 
-    <section id="projects" class="section projects-section">
-        <div class="container">
-            <div class="section-head">
-                <div class="eyebrow">repos --list</div>
-                <h2 class="section-title">Projects</h2>
-            </div>
-            <div class="projects-grid">
-                <div class="project-card surface">
-                    <div class="project-top"><span class="project-lang-dot"></span><h4>vzentra</h4></div>
-                    <p>Project utama yang sedang saya adalah mengembangkan sebuah web dan membuat bot wa atau tele.</p>
-                </div>
-                <div class="project-card surface">
-                    <div class="project-top"><span class="project-lang-dot"></span><h4>website-dev</h4></div>
-                    <p>Membangun website modern, responsif, dan SEO friendly menggunakan HTML, CSS, dan JavaScript.</p>
-                </div>
-                <div class="project-card surface">
-                    <div class="project-top"><span class="project-lang-dot"></span><h4>telegram-bot</h4></div>
-                    <p>Bot Telegram dengan berbagai fitur, dibangun menggunakan Node.js dan library Telegraf.</p>
-                </div>
-                <div class="project-card surface">
-                    <div class="project-top"><span class="project-lang-dot"></span><h4>android-apps</h4></div>
-                    <p>Aplikasi Android menggunakan Flutter dan Kotlin untuk berbagai kebutuhan.</p>
-                </div>
-            </div>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">03 — SELECTED WORKS</p>
+          <h2>Things I've <span>built.</span></h2>
+          <p>A selection of projects and experiments from my development journey.</p>
         </div>
+
+        <div class="project-grid">
+          <article class="project-card glass-card reveal">
+            <div class="project-visual project-blue">
+              <span class="project-symbol">RFID</span>
+              <span class="project-index">PROJECT 01</span>
+            </div>
+            <div class="project-content">
+              <div class="project-meta"><span>IoT</span><span>Attendance System</span></div>
+              <h3>ABSENSI MEKA B</h3>
+              <p>An RFID-based attendance system concept integrating hardware, backend services, and a mobile dashboard.</p>
+              <div class="project-stack"><span>Flutter</span><span>Node.js</span><span>ESP8266</span></div>
+            </div>
+          </article>
+
+          <article class="project-card glass-card reveal">
+            <div class="project-visual project-purple">
+              <span class="project-symbol">AI</span>
+              <span class="project-index">PROJECT 02</span>
+            </div>
+            <div class="project-content">
+              <div class="project-meta"><span>Web App</span><span>Education</span></div>
+              <h3>ghan-study</h3>
+              <p>An AI-powered learning platform concept for studying, solving problems, creating summaries, and practicing quizzes.</p>
+              <div class="project-stack"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Node.js</span></div>
+            </div>
+          </article>
+
+          <article class="project-card glass-card reveal">
+            <div class="project-visual project-cyan">
+              <span class="project-symbol">G</span>
+              <span class="project-index">PROJECT 03</span>
+            </div>
+            <div class="project-content">
+              <div class="project-meta"><span>Android</span><span>AI Assistant</span></div>
+              <h3>Ghanz AI Floating</h3>
+              <p>An Android AI assistant concept featuring a floating interface and native Android integration.</p>
+              <div class="project-stack"><span>Flutter</span><span>Kotlin</span><span>Node.js</span></div>
+            </div>
+          </article>
+
+          <article class="project-card glass-card reveal">
+            <div class="project-visual project-dark">
+              <span class="project-symbol">&lt;/&gt;</span>
+              <span class="project-index">PROJECT 04</span>
+            </div>
+            <div class="project-content">
+              <div class="project-meta"><span>Web</span><span>Personal</span></div>
+              <h3>Personal Portfolio</h3>
+              <p>A personal space to showcase my profile, skills, projects, and development journey.</p>
+              <div class="project-stack"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+              <a class="project-link" href="https://github.com/Ghanz626-vzentra/Ghanz626" target="_blank" rel="noopener noreferrer">View Repository ↗</a>
+            </div>
+          </article>
+        </div>
+      </div>
     </section>
- 
-    <section id="blog" class="section blog-section">
-        <div class="container">
-            <div class="section-head">
-                <div class="eyebrow">changelog</div>
-                <h2 class="section-title">Blog</h2>
-            </div>
-            <div class="blog-grid">
-                <article class="blog-card">
-                    <div class="blog-date">2026-06-15</div>
-                    <div class="blog-body">
-                        <h4>Cara Memulai Belajar Coding di Usia Muda</h4>
-                        <p>Tips dan trik untuk memulai perjalanan coding dari nol. Pelajari bahasa pemrograman yang tepat dan sumber belajar yang efektif.</p>
-                        <a href="#" class="btn-read">baca selengkapnya →</a>
-                    </div>
-                </article>
-                <article class="blog-card">
-                    <div class="blog-date">2026-06-10</div>
-                    <div class="blog-body">
-                        <h4>Membangun Website Portofolio dengan HTML CSS JS</h4>
-                        <p>Panduan lengkap membuat website portofolio modern, responsif, dan SEO friendly menggunakan teknologi murni.</p>
-                        <a href="#" class="btn-read">baca selengkapnya →</a>
-                    </div>
-                </article>
-                <article class="blog-card">
-                    <div class="blog-date">2026-06-05</div>
-                    <div class="blog-body">
-                        <h4>Pengenalan Flutter untuk Pemula</h4>
-                        <p>Mengenal framework Flutter untuk pengembangan aplikasi, termasuk pengalaman membangun project Vzentra.</p>
-                        <a href="#" class="btn-read">baca selengkapnya →</a>
-                    </div>
-                </article>
-            </div>
+
+    <!-- SKILLS -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">04 — SKILLS & TOOLS</p>
+          <h2>My technical <span>toolkit.</span></h2>
+          <p>Technologies I explore and use in my projects.</p>
         </div>
+
+        <div class="skills-grid">
+          <div class="skill-card glass-card reveal"><span>HTML5</span><small>Web Structure</small></div>
+          <div class="skill-card glass-card reveal"><span>CSS3</span><small>Web Styling</small></div>
+          <div class="skill-card glass-card reveal"><span>JavaScript</span><small>Web Development</small></div>
+          <div class="skill-card glass-card reveal"><span>Node.js</span><small>Backend</small></div>
+          <div class="skill-card glass-card reveal"><span>Flutter</span><small>Mobile Apps</small></div>
+          <div class="skill-card glass-card reveal"><span>Kotlin</span><small>Android</small></div>
+          <div class="skill-card glass-card reveal"><span>Python</span><small>Programming</small></div>
+          <div class="skill-card glass-card reveal"><span>GitHub</span><small>Version Control</small></div>
+        </div>
+      </div>
     </section>
- 
-    <section id="contact" class="section contact-section">
-        <div class="container">
-            <div class="section-head">
-                <div class="eyebrow">contact.sh</div>
-                <h2 class="section-title">Contact</h2>
-            </div>
-            <div class="contact-content surface">
-                <div class="contact-item">
-                    <span class="contact-icon">tt</span>
-                    <a href="https://tiktok.com/@ghanz162" target="_blank" rel="noopener">@ghanz162</a>
-                </div>
-                <div class="contact-item">
-                    <span class="contact-icon">tg</span>
-                    <a href="https://t.me/Ghanz626" target="_blank" rel="noopener">@Ghanz626</a>
-                </div>
-                <div class="contact-item">
-                    <span class="contact-icon">gh</span>
-                    <a href="https://github.com/Ghanz626" target="_blank" rel="noopener">Ghanz626</a>
-                </div>
-            </div>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-card reveal">
+          <p class="eyebrow">05 — GET IN TOUCH</p>
+          <h2>Have an idea? Let's <span>build it.</span></h2>
+          <p>
+            I'm always open to learning, sharing ideas, and connecting with
+            people who are passionate about technology.
+          </p>
+
+          <div class="contact-links">
+            <a href="https://github.com/Ghanz626-vzentra" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a>
+            <a href="https://t.me/Ghanz626" target="_blank" rel="noopener noreferrer">Telegram <span>↗</span></a>
+            <a href="https://www.tiktok.com/@ghanz162" target="_blank" rel="noopener noreferrer">TikTok <span>↗</span></a>
+          </div>
         </div>
+      </div>
     </section>
- 
-    <button id="backToTop" class="back-to-top" aria-label="Kembali ke atas">↑</button>
- 
-    <footer class="footer">
-        <div class="container">
-            <p>© 2026 Ghanz626 — Radhitya Ghani Prayata</p>
-            <div class="footer-social">
-                <a href="https://tiktok.com/@ghanz162" target="_blank" rel="noopener">TikTok</a>
-                <a href="https://t.me/Ghanz626" target="_blank" rel="noopener">Telegram</a>
-                <a href="https://github.com/Ghanz626" target="_blank" rel="noopener">GitHub</a>
-            </div>
-        </div>
-    </footer>
- 
-    <script src="script.js"></script>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#home" class="logo">GHANZ<span>626.</span></a>
+      <p>Designed & built with curiosity by Ghanz.</p>
+      <p>© <span id="year"></span> Ghanz626. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Kembali ke atas">↑</button>
 </body>
 </html>
- 
