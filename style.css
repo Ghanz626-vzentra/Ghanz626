@@ -932,3 +932,17 @@ button {
     transform: none;
   }
 }
+
+
+
+.project-green {
+  background: linear-gradient(135deg, #073c2d, #0a9b6c);
+}
+
+.project-orange {
+  background: linear-gradient(135deg, #62320b, #d97719);
+}
+
+.project-red {
+  background: linear-gradient(135deg, #541b28, #bd3852);
+}
